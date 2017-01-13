@@ -162,7 +162,8 @@
 
 - (void)willEnterForeground
 {
-    [self.audioReceiver start];
+    // this line causes app crash when audio input starts after app went foreground
+    // [self.audioReceiver start];
 }
 
 @end
